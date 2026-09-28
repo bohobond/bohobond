@@ -1,0 +1,74 @@
+.article h2 {
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 575;
+  letter-spacing: -0.02em;
+  margin: 1.6rem 0 0.5rem;
+}
+.article ul { padding-left: 1.15rem; color: var(--ink-soft); }
+.article li { margin: 0.25rem 0; }
+.article-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+.edit-actions { display: flex; gap: 0.8rem; }
+.text-btn {
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.78rem;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+.text-btn:hover { color: var(--ink); }
+.hide { display: none !important; }
+#article-body.editing {
+  outline: 1px dashed var(--line);
+  background: var(--bg-elev);
+  padding: 0.75rem 0.9rem;
+}
+.edit-status {
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  min-height: 1.2em;
+}
+.talk { margin-top: 0.5rem; }
+.comments { list-style: none; margin: 0 0 1.5rem; padding: 0; }
+.comments li { padding: 0.9rem 0; border-top: 1px solid var(--line); }
+.comments li.empty { color: var(--ink-soft); border-top: 0; }
+.comments strong {
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.88rem;
+}
+.comments time {
+  display: block;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  margin: 0.15rem 0 0.35rem;
+}
+.comments p { margin: 0; color: var(--ink-soft); }
+.comment-form label {
+  display: block;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.78rem;
+  margin: 0 0 0.85rem;
+}
+.comment-form input,
+.comment-form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.3rem;
+  font: inherit;
+  font-size: 1rem;
+  color: var(--ink);
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  padding: 0.55rem 0.65rem;
+  border-radius: 2px;
+}
+.comment-form .btn { border: 0; cursor: pointer; }

@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/talk.css" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 </head>
 <body>
@@ -32,9 +33,18 @@
 
     <div class="grid">
       <article class="article">
-        <h2>The lesson</h2>
-        <p class="lead">This page is the shelf. The article lands here when it is written. Until then the sentence above is the brief.</p>
-        <p>If you can say that sentence in a pub, you are ready to film it. The film, the X posts, and the few outside links sit to the side so the path stays one page.</p>
+        <div class="article-bar">
+          <h2>The lesson</h2>
+          <div class="edit-actions">
+            <button type="button" class="text-btn" id="edit-btn">Edit</button>
+            <button type="button" class="text-btn hide" id="save-btn">Save</button>
+            <button type="button" class="text-btn hide" id="cancel-btn">Cancel</button>
+          </div>
+        </div>
+        <div id="article-body">
+          <p class="lead">This page is the shelf. The article lands here when it is written.</p>
+        </div>
+        <p class="edit-status" id="edit-status"></p>
       </article>
       <aside class="side">
         <section class="slot">
@@ -50,11 +60,26 @@
         <section class="notes">
           <h2>Elsewhere</h2>
           <ul>
-            <li>Official docs, or one piece that saved you.<span class="src">Not a list of twenty tools</span></li>
+            <li><a href="https://x.com/karpathy/status/1886192184808149383">Karpathy coins “vibe coding”</a><span class="src">The original post, February 2025</span></li>
           </ul>
         </section>
       </aside>
     </div>
+
+    <section class="talk" id="talk">
+      <h2>Talk</h2>
+      <p class="lede tight">Questions, corrections, “I tried this and it broke.” Say where you got stuck.</p>
+      <ol class="comments" id="comments"></ol>
+      <form class="comment-form" id="comment-form">
+        <label>Name <input type="text" name="name" maxlength="60" required /></label>
+        <label>Comment <textarea name="body" rows="4" maxlength="2000" required></textarea></label>
+        <p class="actions">
+          <button class="btn" type="submit">Post comment</button>
+          <span class="edit-status" id="comment-status"></span>
+        </p>
+      </form>
+    </section>
+
     <nav class="pager" id="pager"></nav>
   </main>
 
