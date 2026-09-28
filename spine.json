@@ -1,6 +1,6 @@
 {
   "chapters": [
-    {"n": 1, "slug": "vibe-coding", "title": "Vibe coding", "part": "The craft", "one": "What it is, what it is not, and when you are allowed to forget the code.", "status": "next"},
+    {"n": 1, "slug": "vibe-coding", "title": "Vibe coding", "part": "The craft", "one": "What it is, what it is not, and when you are allowed to forget the code.", "status": "live"},
     {"n": 2, "slug": "models", "title": "Models", "part": "The craft", "one": "What they can do, what they cannot, and which one for which job.", "status": "soon"},
     {"n": 3, "slug": "talking-to-models", "title": "Talking to models", "part": "The craft", "one": "Chats, files, context, agents. How you steer without becoming a prompt collector.", "status": "soon"},
     {"n": 4, "slug": "languages", "title": "Languages", "part": "The workbench", "one": "English first. Then the few languages a shipped product actually needs.", "status": "soon"},
