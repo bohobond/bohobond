@@ -1,25 +1,3 @@
 {
-  "cleanUrls": true,
-  "rewrites": [
-    { "source": "/vibe-coding", "destination": "/chapter.html" },
-    { "source": "/models", "destination": "/chapter.html" },
-    { "source": "/talking-to-models", "destination": "/chapter.html" },
-    { "source": "/languages", "destination": "/chapter.html" },
-    { "source": "/github", "destination": "/chapter.html" },
-    { "source": "/hosting", "destination": "/chapter.html" },
-    { "source": "/domains-and-dns", "destination": "/chapter.html" },
-    { "source": "/secrets", "destination": "/chapter.html" },
-    { "source": "/databases", "destination": "/chapter.html" },
-    { "source": "/files-and-media", "destination": "/chapter.html" },
-    { "source": "/accounts", "destination": "/chapter.html" },
-    { "source": "/payments", "destination": "/chapter.html" },
-    { "source": "/email", "destination": "/chapter.html" },
-    { "source": "/apis-and-webhooks", "destination": "/chapter.html" },
-    { "source": "/mcp-and-agents", "destination": "/chapter.html" },
-    { "source": "/design-and-video", "destination": "/chapter.html" },
-    { "source": "/apple", "destination": "/chapter.html" },
-    { "source": "/debugging-and-safety", "destination": "/chapter.html" },
-    { "source": "/shipping-in-public", "destination": "/chapter.html" },
-    { "source": "/tiny-business", "destination": "/chapter.html" }
-  ]
+  "cleanUrls": true
 }

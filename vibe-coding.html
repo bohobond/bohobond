@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>01 Vibe coding — Bohobond</title>
+  <meta name="description" content="What vibe coding is, what it is not, and when you are allowed to forget the code." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/talk.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
+<body>
+  <header>
+    <a class="wordmark" href="/">Bohobond</a>
+    <nav>
+      <a href="/#spine">The spine</a>
+      <a href="/#built">Built</a>
+      <a href="https://x.com/bohobond">X</a>
+      <a href="mailto:hello@bohobond.com">Mail</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="crumb"><a href="/#spine">The spine</a> <span id="part"></span></p>
+    <section class="hero" style="padding-top:0;padding-bottom:1.5rem">
+      <p class="eyebrow" id="num"></p>
+      <h1 id="title"></h1>
+      <p class="lede" id="one"></p>
+    </section>
+
+    <div class="grid">
+      <article class="article">
+        <div class="article-bar">
+          <h2>The lesson</h2>
+          <div class="edit-actions">
+            <button type="button" class="text-btn" id="edit-btn">Edit</button>
+            <button type="button" class="text-btn hide" id="save-btn">Save</button>
+            <button type="button" class="text-btn hide" id="cancel-btn">Cancel</button>
+          </div>
+        </div>
+        <div id="article-body">
+          <p class="lead">This page is the shelf. The article lands here when it is written.</p>
+        </div>
+        <p class="edit-status" id="edit-status"></p>
+      </article>
+      <aside class="side">
+        <section class="slot">
+          <h2>Film</h2>
+          <div class="film">Not filmed yet. The full cut will sit here. A short cut goes to X the same day.</div>
+        </section>
+        <section class="notes">
+          <h2>On X</h2>
+          <ul>
+            <li>No posts pinned to this chapter yet.<span class="src">Three to five, chosen by hand</span></li>
+          </ul>
+        </section>
+        <section class="notes">
+          <h2>Elsewhere</h2>
+          <ul>
+            <li><a href="https://x.com/karpathy/status/1886192184808149383">Karpathy coins “vibe coding”</a><span class="src">The original post, February 2025</span></li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+
+    <section class="talk" id="talk">
+      <h2>Talk</h2>
+      <p class="lede tight">Questions, corrections, “I tried this and it broke.” Say where you got stuck.</p>
+      <ol class="comments" id="comments"></ol>
+      <form class="comment-form" id="comment-form">
+        <label>Name <input type="text" name="name" maxlength="60" required /></label>
+        <label>Comment <textarea name="body" rows="4" maxlength="2000" required></textarea></label>
+        <p class="actions">
+          <button class="btn" type="submit">Post comment</button>
+          <span class="edit-status" id="comment-status"></span>
+        </p>
+      </form>
+    </section>
+
+    <nav class="pager" id="pager"></nav>
+  </main>
+
+  <footer>
+    <span><a href="/#spine">Back to the spine</a></span>
+    <span>Twenty chapters. One path.</span>
+  </footer>
+
+  <script src="/school.js"></script>
+  <script>renderChapter();</script>
+</body>
+</html>
