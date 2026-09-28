@@ -1,0 +1,314 @@
+:root {
+  --bg: #f6f4ef;
+  --bg-elev: #fffcf7;
+  --ink: #1c1916;
+  --ink-soft: #5c564e;
+  --line: #e4dfd6;
+  --accent: #2f4a3c;
+  --accent-hover: #24382e;
+  --max: 44rem;
+  --wide: 58rem;
+}
+
+* { box-sizing: border-box; }
+html { font-size: 18px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+a:hover { color: var(--accent-hover); }
+
+header, main, footer {
+  width: min(var(--wide), calc(100% - 2.5rem));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  padding: 1.6rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.wordmark {
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  text-decoration: none;
+}
+.wordmark:hover { color: var(--ink); }
+
+nav {
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  display: flex;
+  gap: 1.1rem;
+}
+nav a { color: var(--ink-soft); text-decoration: none; }
+nav a:hover { color: var(--ink); }
+
+main { flex: 1; padding: 3.5rem 0 4rem; }
+
+.hero { max-width: var(--max); padding: 2.5rem 0 3rem; border-top: 0; }
+
+.eyebrow {
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0 0 0.85rem;
+}
+
+h1 {
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: clamp(2rem, 5vw, 3.1rem);
+  letter-spacing: -0.045em;
+  line-height: 1.06;
+  margin: 0 0 1.15rem;
+}
+
+h2 {
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 575;
+  font-size: 1.05rem;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.75rem;
+}
+
+section { padding: 2.25rem 0; border-top: 1px solid var(--line); }
+
+.lede {
+  font-size: 1.12rem;
+  color: var(--ink-soft);
+  max-width: 36rem;
+  margin: 0 0 1.6rem;
+}
+.lede.tight { margin-bottom: 1.1rem; }
+
+.script {
+  border-left: 2px solid var(--accent);
+  padding: 0.1rem 0 0.1rem 1.1rem;
+  color: var(--ink);
+  font-style: italic;
+  margin: 0 0 2rem;
+  max-width: 34rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.25rem;
+  margin: 0;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--ink);
+  color: var(--bg);
+  text-decoration: none;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  padding: 0.65rem 0.95rem;
+  border-radius: 2px;
+}
+.btn:hover { background: var(--accent); color: var(--bg); }
+
+.text-link {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+.text-link:hover { color: var(--ink); }
+
+.spine {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.spine li { border-top: 1px solid var(--line); }
+.spine li:first-child { border-top: 0; }
+.spine a {
+  display: grid;
+  grid-template-columns: 2.4rem 1fr auto;
+  gap: 0.9rem;
+  align-items: baseline;
+  padding: 0.7rem 0;
+  color: inherit;
+  text-decoration: none;
+}
+.spine a:hover .t { color: var(--accent); }
+.spine .n {
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+.spine .t {
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+.spine .one {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  margin-top: 0.15rem;
+}
+.spine .st {
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.part {
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 1.6rem 0 0.4rem;
+}
+.part:first-child { margin-top: 0.4rem; }
+
+.projects {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.9rem;
+}
+@media (min-width: 720px) {
+  .projects { grid-template-columns: 1fr 1fr; gap: 1rem 1.5rem; }
+}
+.projects li {
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  padding: 1.1rem 1.15rem 1.2rem;
+}
+.projects strong {
+  display: block;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.35rem;
+}
+.projects strong a { color: var(--ink); text-decoration: none; }
+.projects strong a:hover { color: var(--accent); }
+.projects span { color: var(--ink-soft); font-size: 0.95rem; }
+.projects .tags {
+  display: block;
+  margin-top: 0.65rem;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+}
+
+.crumb {
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  margin: 0 0 1.5rem;
+}
+.crumb a { color: var(--ink-soft); text-decoration: none; }
+.crumb a:hover { color: var(--ink); }
+
+.article { max-width: var(--max); }
+.article p { color: var(--ink-soft); margin: 0 0 1em; }
+.article p.lead { color: var(--ink); font-size: 1.12rem; }
+
+.side { display: grid; gap: 1.75rem; }
+.slot, .notes {
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  padding: 1.1rem 1.15rem 1.2rem;
+}
+.slot h2, .notes h2 { margin-bottom: 0.6rem; }
+.film {
+  min-height: 8rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  border: 1px dashed var(--line);
+  padding: 1.25rem;
+  background: var(--bg);
+}
+.notes ul { list-style: none; margin: 0; padding: 0; }
+.notes li {
+  padding: 0.55rem 0;
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+.notes li:first-child { border-top: 0; padding-top: 0; }
+.notes .src {
+  display: block;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.72rem;
+  margin-top: 0.2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+@media (min-width: 860px) {
+  .grid { grid-template-columns: 1.35fr 0.8fr; gap: 2.5rem; align-items: start; }
+}
+
+.pager {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.85rem;
+}
+
+footer {
+  padding: 1.5rem 0 2.25rem;
+  border-top: 1px solid var(--line);
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.25rem;
+  justify-content: space-between;
+}
+
+@media (max-width: 640px) {
+  main { padding-top: 1.5rem; }
+  header { flex-wrap: wrap; }
+  .spine a { grid-template-columns: 2.2rem 1fr; }
+  .spine .st { display: none; }
+}
