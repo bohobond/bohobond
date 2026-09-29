@@ -1,24 +1,164 @@
 {
   "chapters": [
-    {"n": 1, "slug": "vibe-coding", "title": "Vibe coding", "part": "The craft", "one": "What it is, what it is not, and when you are allowed to forget the code.", "status": "live"},
-    {"n": 2, "slug": "models", "title": "Models", "part": "The craft", "one": "What they can do, what they cannot, and which one for which job.", "status": "soon"},
-    {"n": 3, "slug": "talking-to-models", "title": "Talking to models", "part": "The craft", "one": "Chats, files, context, agents. How you steer without becoming a prompt collector.", "status": "soon"},
-    {"n": 4, "slug": "languages", "title": "Languages", "part": "The workbench", "one": "English first. Then the few languages a shipped product actually needs.", "status": "soon"},
-    {"n": 5, "slug": "github", "title": "GitHub", "part": "The workbench", "one": "Save points. A repo is how the rest of the internet can see your folder.", "status": "soon"},
-    {"n": 6, "slug": "hosting", "title": "Hosting", "part": "On the internet", "one": "The button that turns a folder into a website. Preview vs live.", "status": "soon"},
-    {"n": 7, "slug": "domains-and-dns", "title": "Domains and DNS", "part": "On the internet", "one": "Buy a name. Point it. This is where most beginners freeze.", "status": "soon"},
-    {"n": 8, "slug": "secrets", "title": "Secrets", "part": "On the internet", "one": "Environment variables. Keys that must never go in the public repo.", "status": "soon"},
-    {"n": 9, "slug": "databases", "title": "Databases", "part": "Memory, people, money", "one": "How the product remembers users, orders, and the last thing that happened.", "status": "soon"},
-    {"n": 10, "slug": "files-and-media", "title": "Files and media", "part": "Memory, people, money", "one": "Images and video do not belong in the database or in git.", "status": "soon"},
-    {"n": 11, "slug": "accounts", "title": "Accounts", "part": "Memory, people, money", "one": "Sign in. Sessions. Who is this person. Do not invent passwords first.", "status": "soon"},
-    {"n": 12, "slug": "payments", "title": "Payments", "part": "Memory, people, money", "one": "Stripe test cards, then one real pound. Webhooks make it a product.", "status": "soon"},
-    {"n": 13, "slug": "email", "title": "Email", "part": "Memory, people, money", "one": "The app wrote to the user. DNS again. Newsletter later.", "status": "soon"},
-    {"n": 14, "slug": "apis-and-webhooks", "title": "APIs and webhooks", "part": "The rest of the world", "one": "Your app talks out. Other apps talk back. JSON in plain English.", "status": "soon"},
-    {"n": 15, "slug": "mcp-and-agents", "title": "MCP and agents", "part": "The rest of the world", "one": "Hands for the model. Work that continues when you close the laptop.", "status": "soon"},
-    {"n": 16, "slug": "design-and-video", "title": "Design and video", "part": "Making it a thing", "one": "Look, clips, Imagine. Distribution is part of shipping.", "status": "soon"},
-    {"n": 17, "slug": "apple", "title": "Apple", "part": "Beyond the browser", "one": "When a website is not enough: menu bar, files, Xcode without the priesthood.", "status": "soon"},
-    {"n": 18, "slug": "debugging-and-safety", "title": "Debugging and safety", "part": "Living with it", "one": "Read the red text. Paste it back. Do not leak keys or light money on fire.", "status": "soon"},
-    {"n": 19, "slug": "shipping-in-public", "title": "Shipping in public", "part": "Living with it", "one": "X, YouTube, the site. A date. Ugly is allowed.", "status": "soon"},
-    {"n": 20, "slug": "tiny-business", "title": "Tiny business", "part": "Living with it", "one": "Domain email, invoices, a company if it happens. Code was the easy part.", "status": "soon"}
+    {
+      "n": 1,
+      "slug": "vibe-coding",
+      "title": "Vibe coding",
+      "part": "The craft",
+      "one": "What it is, what it is not, and when you are allowed to forget the code.",
+      "status": "live"
+    },
+    {
+      "n": 2,
+      "slug": "models",
+      "title": "Models",
+      "part": "The craft",
+      "one": "What they can do, what they cannot, and which one for which job.",
+      "status": "draft"
+    },
+    {
+      "n": 3,
+      "slug": "talking-to-models",
+      "title": "Talking to models",
+      "part": "The craft",
+      "one": "Chats, files, context, agents. How you steer without becoming a prompt collector.",
+      "status": "draft"
+    },
+    {
+      "n": 4,
+      "slug": "languages",
+      "title": "Languages",
+      "part": "The workbench",
+      "one": "English first. Then the few languages a shipped product actually needs.",
+      "status": "draft"
+    },
+    {
+      "n": 5,
+      "slug": "github",
+      "title": "GitHub",
+      "part": "The workbench",
+      "one": "Save points. A repo is how the rest of the internet can see your folder.",
+      "status": "draft"
+    },
+    {
+      "n": 6,
+      "slug": "hosting",
+      "title": "Hosting",
+      "part": "On the internet",
+      "one": "The button that turns a folder into a website. Preview vs live.",
+      "status": "draft"
+    },
+    {
+      "n": 7,
+      "slug": "domains-and-dns",
+      "title": "Domains and DNS",
+      "part": "On the internet",
+      "one": "Buy a name. Point it. This is where most beginners freeze.",
+      "status": "draft"
+    },
+    {
+      "n": 8,
+      "slug": "secrets",
+      "title": "Secrets",
+      "part": "On the internet",
+      "one": "Environment variables. Keys that must never go in the public repo.",
+      "status": "draft"
+    },
+    {
+      "n": 9,
+      "slug": "databases",
+      "title": "Databases",
+      "part": "Memory, people, money",
+      "one": "How the product remembers users, orders, and the last thing that happened.",
+      "status": "draft"
+    },
+    {
+      "n": 10,
+      "slug": "files-and-media",
+      "title": "Files and media",
+      "part": "Memory, people, money",
+      "one": "Images and video do not belong in the database or in git.",
+      "status": "draft"
+    },
+    {
+      "n": 11,
+      "slug": "accounts",
+      "title": "Accounts",
+      "part": "Memory, people, money",
+      "one": "Sign in. Sessions. Who is this person. Do not invent passwords first.",
+      "status": "draft"
+    },
+    {
+      "n": 12,
+      "slug": "payments",
+      "title": "Payments",
+      "part": "Memory, people, money",
+      "one": "Stripe test cards, then one real pound. Webhooks make it a product.",
+      "status": "draft"
+    },
+    {
+      "n": 13,
+      "slug": "email",
+      "title": "Email",
+      "part": "Memory, people, money",
+      "one": "The app wrote to the user. DNS again. Newsletter later.",
+      "status": "draft"
+    },
+    {
+      "n": 14,
+      "slug": "apis-and-webhooks",
+      "title": "APIs and webhooks",
+      "part": "The rest of the world",
+      "one": "Your app talks out. Other apps talk back. JSON in plain English.",
+      "status": "draft"
+    },
+    {
+      "n": 15,
+      "slug": "mcp-and-agents",
+      "title": "MCP and agents",
+      "part": "The rest of the world",
+      "one": "Hands for the model. Work that continues when you close the laptop.",
+      "status": "draft"
+    },
+    {
+      "n": 16,
+      "slug": "design-and-video",
+      "title": "Design and video",
+      "part": "Making it a thing",
+      "one": "Look, clips, Imagine. Distribution is part of shipping.",
+      "status": "draft"
+    },
+    {
+      "n": 17,
+      "slug": "apple",
+      "title": "Apple",
+      "part": "Beyond the browser",
+      "one": "When a website is not enough: menu bar, files, Xcode without the priesthood.",
+      "status": "draft"
+    },
+    {
+      "n": 18,
+      "slug": "debugging-and-safety",
+      "title": "Debugging and safety",
+      "part": "Living with it",
+      "one": "Read the red text. Paste it back. Do not leak keys or light money on fire.",
+      "status": "draft"
+    },
+    {
+      "n": 19,
+      "slug": "shipping-in-public",
+      "title": "Shipping in public",
+      "part": "Living with it",
+      "one": "X, YouTube, the site. A date. Ugly is allowed.",
+      "status": "draft"
+    },
+    {
+      "n": 20,
+      "slug": "tiny-business",
+      "title": "Tiny business",
+      "part": "Living with it",
+      "one": "Domain email, invoices, a company if it happens. Code was the easy part.",
+      "status": "draft"
+    }
   ]
 }
