@@ -72,3 +72,83 @@
   border-radius: 2px;
 }
 .comment-form .btn { border: 0; cursor: pointer; }
+
+.tape { margin-top: 0.5rem; }
+.tape-year {
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  padding: 1.4rem 0 0.35rem;
+  border-top: 1px solid var(--line);
+}
+.tape-year:first-child { border-top: 0; padding-top: 0; }
+.tape-item {
+  display: block;
+  padding: 0.95rem 0 1.05rem 1.1rem;
+  border-left: 2px solid var(--line);
+  color: inherit;
+  text-decoration: none;
+}
+.tape-item + .tape-item { margin-top: 0; }
+a.tape-item:hover strong { color: var(--accent); }
+.tape-item .k {
+  display: block;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 0.2rem;
+}
+.tape-item strong {
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 575;
+  letter-spacing: -0.02em;
+}
+.tape-item p {
+  margin: 0.25rem 0 0;
+  color: var(--ink-soft);
+  max-width: 36rem;
+}
+.kind-lesson { border-left-color: var(--accent); }
+.kind-built { border-left-color: #8a6a3b; }
+.kind-x { border-left-color: #2a2a2a; }
+.kind-mark { border-left-color: #7a4a4a; }
+
+body.play { background: #12110f; color: #f3efe6; }
+body.play header, body.play main, body.play footer { width: min(58rem, calc(100% - 2.5rem)); }
+body.play .wordmark, body.play .wordmark:hover { color: #f3efe6; }
+body.play nav a { color: #9a9488; }
+body.play nav a:hover { color: #f3efe6; }
+body.play .eyebrow { color: #9a9488; }
+body.play .lede { color: #c6bfb2; }
+.play-main { padding: 3.5rem 0 5rem; }
+.play-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+@media (min-width: 720px) {
+  .play-grid { grid-template-columns: 1fr 1fr 1fr; }
+}
+.play-card {
+  min-height: 14rem;
+  border: 1px solid #2a2824;
+  background: #1a1916;
+  padding: 1.15rem 1.2rem;
+}
+.play-card span {
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  color: #9a9488;
+}
+.play-card strong {
+  display: block;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 1.5rem 0 0.4rem;
+  letter-spacing: -0.03em;
+}
+.play-card p { color: #9a9488; margin: 0; }
