@@ -3,91 +3,50 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bohobond — vibe coding for people who were never invited in</title>
-  <meta name="description" content="A plain path for beginners who want to ship with Grok. Twenty chapters, plus the tools built along the way." />
+  <title>Bohobond</title>
+  <meta name="description" content="A public board for a private person. Lessons, things shipped, and a workshop floor." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/talk.css" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 </head>
 <body>
   <header>
     <a class="wordmark" href="/">Bohobond</a>
     <nav>
-      <a href="#spine">The spine</a>
-      <a href="#built">Built</a>
+      <a href="/learn">Learn</a>
+      <a href="/play">Play</a>
+      <a href="/built">Built</a>
       <a href="https://x.com/bohobond">X</a>
-      <a href="mailto:hello@bohobond.com">Mail</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <p class="eyebrow">A school for noobs</p>
-      <h1>Vibe coding for people who were never invited in.</h1>
-      <p class="lede">Grok can write the code. The rest is the job: a domain, a host, a database, a payment, a film of what you made. This site is that path, in layman’s terms, from someone doing it in public.</p>
-      <p class="script">Anyone can talk a product into existence and put it on the internet this week.</p>
+      <p class="eyebrow">A character, not a course</p>
+      <h1>The board is public.<br />I am not.</h1>
+      <p class="lede">Bohobond is a person who ships with Grok and leaves the door open. Lessons live in a room. Experiments live in another. This page is the tape: life, work, and the bits worth keeping.</p>
       <p class="actions">
-        <a class="btn" href="/vibe-coding">Start at chapter 01</a>
-        <a class="text-link" href="#spine">Read the spine</a>
+        <a class="btn" href="/learn">The path</a>
+        <a class="text-link" href="/play">Fall into the workshop</a>
       </p>
     </section>
 
-    <section id="spine">
-      <h2>The spine</h2>
-      <p class="lede tight">Twenty chapters. Each page will hold an article, a film when it exists, and a few links that actually help. Empty shelves are honest. Start at the top.</p>
-      <div id="spine-list"></div>
-    </section>
-
-    <section id="built">
-      <h2>Built while learning</h2>
-      <p class="lede tight">The curriculum is not theoretical. These are products shipped with the same stack the chapters teach — Grok, Vercel, Stripe, Shopify, Xcode. Use them, or use them as proof that a first version can leave the chat window.</p>
-      <ul class="projects">
-        <li>
-          <strong><a href="https://billboard.wtf">Billboard</a></strong>
-          <span>One face on a digital billboard. Price starts at a dollar. Worlds, studio, Stripe, Imagine.</span>
-          <span class="tags">Grok · Vercel · Stripe · domain</span>
-        </li>
-        <li>
-          <strong><a href="https://sendreorder.com">Send Reorder</a></strong>
-          <span>Shopify B2B app that drafts the usual order when a company location goes quiet.</span>
-          <span class="tags">Shopify · email · boring software</span>
-        </li>
-        <li>
-          <strong><a href="https://scratchbox.xyz">Scratchbox</a></strong>
-          <span>Mac menu-bar inbox for screenshots and throwaway files. Nothing stays unless you keep it.</span>
-          <span class="tags">Swift · Xcode · local only</span>
-        </li>
-        <li>
-          <strong><a href="https://meetingmode.xyz">Meeting Mode</a></strong>
-          <span>A local ritual for calls: focus, a dated note, join from calendar, optional Grok listening.</span>
-          <span class="tags">Grok · Mac · no account</span>
-        </li>
-        <li>
-          <strong>Roombox</strong>
-          <span>Desk software for independent hotels. Working title. The lesson: vibe coding is not only toys.</span>
-          <span class="tags">Vercel · TypeScript · in progress</span>
-        </li>
-        <li>
-          <strong>Open Mailer</strong>
-          <span>One mailbox, many domains. Reply from the address that was written to.</span>
-          <span class="tags">Email · DNS · early</span>
-        </li>
-      </ul>
+    <section id="tape-wrap">
+      <h2>Tape</h2>
+      <p class="lede tight">Newest first. Click a lesson or a product. Marks from visitors come later — the same two-way edit as the chapters, pointed at a life instead of a syllabus.</p>
+      <div id="tape" class="tape"></div>
     </section>
   </main>
 
   <footer>
     <span>© 2026 Ridiculous Corporation Limited. Company no. 16493949.</span>
-    <span>
-      <a href="https://x.com/bohobond">x.com/bohobond</a>
-      ·
-      <a href="mailto:hello@bohobond.com">hello@bohobond.com</a>
-    </span>
+    <span><a href="mailto:hello@bohobond.com">hello@bohobond.com</a></span>
   </footer>
 
   <script src="/school.js"></script>
-  <script>renderSpine();</script>
+  <script>bootTimeline();</script>
 </body>
 </html>
