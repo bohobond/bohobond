@@ -1,0 +1,75 @@
+{
+  "entries": [
+    {
+      "id": "wake-2026",
+      "at": "2026-09-28",
+      "kind": "life",
+      "title": "The board is public. I am not.",
+      "body": "Cleaned the X account. Kept the name. The site stops pretending it is only a school."
+    },
+    {
+      "id": "spine",
+      "at": "2026-09-28",
+      "kind": "lesson",
+      "title": "Twenty chapters, off the homepage",
+      "body": "Vibe coding for people who were never invited in. The path still exists. It lives in a room now.",
+      "href": "/learn"
+    },
+    {
+      "id": "ch-01",
+      "at": "2026-09-28",
+      "kind": "lesson",
+      "title": "01 · Vibe coding",
+      "body": "Talk a product into existence. Put it on the internet. The chat is not the product.",
+      "href": "/vibe-coding"
+    },
+    {
+      "id": "scratchbox",
+      "at": "2026-08-01",
+      "kind": "built",
+      "title": "Scratchbox",
+      "body": "Screenshots should not live on the Desktop. Menu bar. Local. Nothing stays unless you keep it.",
+      "href": "https://scratchbox.xyz"
+    },
+    {
+      "id": "sendreorder",
+      "at": "2026-07-01",
+      "kind": "built",
+      "title": "Send Reorder",
+      "body": "The usual order, when a wholesale account goes quiet. Paper UI. Shopify. Boring on purpose.",
+      "href": "https://sendreorder.com"
+    },
+    {
+      "id": "meetingmode",
+      "at": "2026-09-01",
+      "kind": "built",
+      "title": "Meeting Mode",
+      "body": "A ritual for a call. Dated note. Join from calendar. Optional Grok listening. Listed here; shipping when it is ready.",
+      "href": "/built"
+    },
+    {
+      "id": "openmailer",
+      "at": "2026-06-01",
+      "kind": "built",
+      "title": "Open Mailer",
+      "body": "One mailbox, many domains. Reply from the address that was written to. Early.",
+      "href": "/built"
+    },
+    {
+      "id": "locker",
+      "at": "2026-05-01",
+      "kind": "built",
+      "title": "Markdown Locker",
+      "body": "Notes that stay files. Listed while the public URL catches up.",
+      "href": "/built"
+    },
+    {
+      "id": "x-home",
+      "at": "2026-09-28",
+      "kind": "x",
+      "title": "@bohobond",
+      "body": "The public board. Replies first. The rest of the character lives here.",
+      "href": "https://x.com/bohobond"
+    }
+  ]
+}
