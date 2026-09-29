@@ -1,0 +1,46 @@
+.tape-form {
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  padding: 1.1rem 1.15rem 1.2rem;
+  margin: 0 0 1.5rem;
+}
+.tape-form label {
+  display: block;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.78rem;
+  margin: 0 0 0.85rem;
+}
+.tape-form input,
+.tape-form textarea,
+.tape-form select {
+  display: block;
+  width: 100%;
+  margin-top: 0.3rem;
+  font: inherit;
+  font-size: 1rem;
+  color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  padding: 0.55rem 0.65rem;
+  border-radius: 2px;
+}
+.tape-fields {
+  display: grid;
+  gap: 0.8rem;
+}
+@media (min-width: 640px) {
+  .tape-fields { grid-template-columns: 1fr 1fr; }
+}
+.tape-meta {
+  display: flex;
+  gap: 0.9rem;
+  margin-top: 0.45rem;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.78rem;
+}
+.tape-open {
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+.tape-open:hover { color: var(--ink); }
+.tape-form .btn { border: 0; cursor: pointer; }
