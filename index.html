@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
   <link rel="stylesheet" href="/talk.css" />
+  <link rel="stylesheet" href="/tape.css" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 </head>
 <body>
@@ -35,9 +36,50 @@
     </section>
 
     <section id="tape-wrap">
-      <h2>Tape</h2>
-      <p class="lede tight">Newest first. Click a lesson or a product. Marks from visitors come later — the same two-way edit as the chapters, pointed at a life instead of a syllabus.</p>
+      <div class="article-bar">
+        <h2>Tape</h2>
+        <button type="button" class="text-btn" id="tend-tape">Tend the tape</button>
+      </div>
+      <p class="lede tight">Newest first. You write the life, the lessons, the builds. Anyone can leave a mark at the bottom. Marks cannot rewrite your rows.</p>
+
+      <form id="owner-form" class="tape-form hide" autocomplete="off">
+        <input type="hidden" name="id" />
+        <div class="tape-fields">
+          <label>Kind
+            <select name="kind">
+              <option value="life">Life</option>
+              <option value="lesson">Lesson</option>
+              <option value="built">Built</option>
+              <option value="note">Note</option>
+              <option value="film">Film</option>
+              <option value="x">X</option>
+            </select>
+          </label>
+          <label>Date <input type="date" name="at" /></label>
+        </div>
+        <label>Title <input type="text" name="title" maxlength="120" required /></label>
+        <label>Body <textarea name="body" rows="3" maxlength="600" required></textarea></label>
+        <label>Link <input type="text" name="href" maxlength="300" placeholder="/learn or https://" /></label>
+        <p class="actions">
+          <button class="btn" type="submit">Add to tape</button>
+          <button type="button" class="text-btn" id="owner-clear">Clear</button>
+        </p>
+      </form>
+
       <div id="tape" class="tape"></div>
+      <p class="edit-status" id="tape-status"></p>
+    </section>
+
+    <section id="mark">
+      <h2>Leave a mark</h2>
+      <p class="lede tight">A name and a sentence. It lands on the tape as a mark, not as a life event.</p>
+      <form id="mark-form" class="comment-form">
+        <label>Name <input type="text" name="name" maxlength="60" required /></label>
+        <label>Mark <textarea name="body" rows="3" maxlength="400" required></textarea></label>
+        <p class="actions">
+          <button class="btn" type="submit">Leave a mark</button>
+        </p>
+      </form>
     </section>
   </main>
 
